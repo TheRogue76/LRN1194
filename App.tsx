@@ -16,6 +16,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import LottieReactNative from 'lottie-react-native'
 
 import {
   Colors,
@@ -76,6 +77,7 @@ function App(): React.JSX.Element {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
+          <LottieReactNative source={require('./anim.json')} autoPlay loop style={{width: 200, height: 200}} />
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.
